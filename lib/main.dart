@@ -57,10 +57,25 @@ class MyApp extends StatelessWidget {
             SizedBox(height: 5),
             Text("Study in  GLA university,"),
             Divider(color: Colors.black, height: 20, thickness: 2),
-            
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    'Education :',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Divider(color: Colors.black, thickness: 2),
           ],
         ),
-        
+
         backgroundColor: Colors.white,
       ),
     );
