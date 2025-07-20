@@ -56,7 +56,35 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Text("Study in  GLA university,"),
-            Divider(color: Colors.black, height: 20, thickness: 2),
+            Divider(color: Colors.black, thickness: 1),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    'Education : ',
+                    textAlign: TextAlign.right,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Column(
+                  children: [
+                    Text(
+                      "Bachelor of Technology in Computer Science, GLA University, Mathura                       	June 2026",
+                    ),
+                    Text(
+                      "   Diploma  GLA University, Mathura                                                                                                                                  June 2020",
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Divider(color: Colors.black, thickness: 1),
             Row(
               children: [
                 Padding(
@@ -72,7 +100,38 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
-            Divider(color: Colors.black, thickness: 2),
+            Divider(color: Colors.black, thickness: 1),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    'Education :',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Divider(color: Colors.black, thickness: 1),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Text(
+                    'Education :',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
 
