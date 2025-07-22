@@ -331,6 +331,19 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(left: 10.0),
+                    child: Text(
+                      "•	I have completed Web Development online course from Prodigy infotech ."
+                      "\n"
+                      "•	Attended online workshop on Flutter App Development from  Ws cube tech.",
+                    ),
+                  ),
+                ],
+              ),
               Divider(color: Colors.blueAccent, thickness: 1),
               Row(
                 children: [
@@ -342,6 +355,35 @@ class MyApp extends StatelessWidget {
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                         color: Colors.blueAccent,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Text(
+                      "I hereby declare that the information provided above is true to the best of my knowledge and belief.",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Text(
+                      "Date :  20/11/2024",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
                       ),
                     ),
                   ),
