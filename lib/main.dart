@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'PORTFOLIO',
+      title: 'RESUME',
       theme: ThemeData(
         // This is the theme of your application.
         badgeTheme: const BadgeThemeData(
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('Portfolio')),
+          title: Center(child: Text('RESUME')),
           backgroundColor: Colors.deepPurple,
         ),
         body: SingleChildScrollView(
@@ -38,8 +38,8 @@ class MyApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(200.0),
                     child: Image.asset(
                       'assets/images/bhanu.png',
-                      width: 100,
-                      height: 100,
+                      width: 120,
+                      height: 120,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -87,29 +87,25 @@ class MyApp extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
+                  // mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.normal,
-                              color: Colors.black,
-                            ),
-                            "Bachelor of Technology in Computer Science, GLA University, Mathura        June 2026"
-                            "\n"
-                            "Diploma  GLA University, Mathura                                                                    June 2020"
-                            "\n"
-                            "Intermediate from Uttar Predesh Board     							                                                  May 2017"
-                            "\n"
-                            "High School from Uttar Predesh Board     						                                                     May 2015",
-                          ),
-                        ],
+                      padding: EdgeInsets.only(left: 10.0),
+                      child: Text(
+                        "Bachelor of Technology in Computer Science, GLA University, Mathura          June 2026"
+                        "\n"
+                        "Diploma  GLA University, Mathura                                                                         June 2020"
+                        "\n"
+                        "Intermediate from Uttar Predesh Board     							                                                    May 2017"
+                        "\n"
+                        "High School from Uttar Predesh Board                                                                  May 2015",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ],
@@ -331,19 +327,24 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text(
-                      "•	I have completed Web Development online course from Prodigy infotech ."
-                      "\n"
-                      "•	Attended online workshop on Flutter App Development from  Ws cube tech.",
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(left: 10.0),
+                      child: Text(
+                        "•	I have completed Web Development online course from Prodigy infotech ."
+                        "\n"
+                        "•	Attended online workshop on Flutter App Development from  Ws cube tech.",
+                        textAlign: TextAlign.start,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
+
               Divider(color: Colors.blueAccent, thickness: 1),
               Row(
                 children: [
@@ -360,23 +361,34 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Text(
-                      "I hereby declare that the information provided above is true to the best of my knowledge and belief.",
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.black,
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(left: 10.0),
+
+                      child: Text(
+                        "I hereby declare that the information provided above is true to the best of my knowledge and belief.",
+                        textAlign: TextAlign.left,
+
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.normal,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
-                  ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
                   Padding(
-                    padding: EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.only(left: 8.0),
                     child: Text(
                       "Date :  20/11/2024",
                       textAlign: TextAlign.left,
