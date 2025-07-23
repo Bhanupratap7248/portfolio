@@ -38,8 +38,8 @@ class MyApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(200.0),
                     child: Image.asset(
                       'assets/images/bhanu.png',
-                      width: 120,
-                      height: 120,
+                      width: 130,
+                      height: 130,
                       fit: BoxFit.cover,
                     ),
                   ),
