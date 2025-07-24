@@ -4,13 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+📄 Resume UI Built with Flutter
+This project is a custom resume screen made using Flutter widgets like Column, Row, and Expanded. It showcases:
 
-A few resources to get you started if this is your first Flutter project:
+📚 Education
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+💼 Internship experience
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💻 Projects
+
+Built with a clean layout and icons to simulate a professional resume screen inside a Flutter app .
+
